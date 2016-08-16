@@ -51,26 +51,22 @@
       <input type="range" min="100" max="500" step="10" name="sort-by-price" value="300">
     </div>
     <div class="fat-content">
-      <form class="fat-content-radio" action="index.html" method="post">
+      <form class="filter" action="index.html" method="post">
         <p class="filter-name">  Жирность:</p>
         <input type="radio" id="0%" name="chose-fat" value="0%"><label for="0%">0%</label>
         <input type="radio" id="under-10%" name="chose-fat" value="under-10%" checked=""><label for="under-10%">до 10%</label>
         <input type="radio" id="30%" name="chose-fat" value="30%"><label for="30%">30%</label>
         <input type="radio" id="under-30%" name="chose-fat" value="under-30%"><label for="under-30%">до 30%</label>
         <input type="radio" id="up-30%" name="chose-fat" value="up-30%"><label for="up-30%">выше 30%</label>
-        </form>
-    </div>
-    <div class="ingridients">
-      <form class="" action="index.html" method="post">
         <p class="filter-name">Наполнители</p>
         <input type="checkbox" id="chocolate" name="ingridients" value="chocolate" checked><label for="chocolate">Шоколадные</label>
         <input type="checkbox" id="shugar-piece" name="ingridients" value="shugar-piece" checked><label for="shugar-piece">Сахарные присыпки</label>
         <input type="checkbox" id="fruits" name="ingridients" value="fruits"><label for="fruits">Фрукты</label>
         <input type="checkbox" id="syrup" name="ingridients" value="syrup"><label for="syrup">Сиропы</label>
         <input type="checkbox" id="jams" name="ingridients" value="jams"><label for="jams">Джемы</label>
-        <div class="filtres">
-        <input type="submit" value="Применить">
-      </div>
+        <div class="submit-button">
+        <button type="button" name="button">Показать</button>
+        </div>
         </form>
     </div>
   </div>
