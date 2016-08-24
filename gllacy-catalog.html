@@ -10,7 +10,7 @@
     <header class="main-header">
       <div class="container clearfix">
         <div class="logo-index">
-          <img src="img/logo.svg" width="100" height="50" alt="Глейси">
+          <a href=""><img src="img/logo.svg" width="100" height="50" alt="Глейси"></a>
         </div>
         <nav class="main-navigation">
           <ul class="nav-list">
@@ -26,10 +26,9 @@
             <li><a href="#">Пусто</a></li>
           </ul>
           <div class="contact-info">
-            <p class="work-time">
-              с 10 до 20, ежедневно<br>
-            <a href="#">8 812 450-25-25</a>
-            </p>
+            <p class="work-time">с 10 до 20, ежедневно</p>
+            <p><a href="#">8 812 450-25-25</a><p>
+
           </div>
 
         </div>
@@ -45,43 +44,42 @@
     </div>
     <h1 class="main-title">Сливочное мороженое</h1>
 
-  <div class="filtres container">
-    <div class="filer-sort">
-      <p class="filter-name">Сортировка</p>
-      <select class="filter-list" name="sorting">
-        <option value="популярные">По популярности</option>
-      </select>
-    </div>
-    <div class="filer-price">
-      <p class="filter-name">Цена: 100 руб.-500 руб.</p>
-      <input type="range" min="100" max="500" step="10" name="sort-by-price" value="300">
-    </div>
-    <div class="fat-content">
-      <form class="filter" action="index.html" method="post">
+    <form class="filter clearfix" action="index.html" method="post">
+        <div class="filer-sort">
+          <p class="filter-name">Сортировка</p>
+          <select class="filter-list" name="sorting">
+            <option value="популярные">По популярности</option>
+          </select>
+        </div>
+        <div class="filer-price">
+          <p class="filter-name">Цена: 100 руб.-500 руб.</p>
+          <input type="range" min="100" max="500" step="10" name="sort-by-price" value="300">
+        </div>
+        <div class="fat-content">
         <p class="filter-name">  Жирность:</p>
         <input type="radio" id="0%" name="chose-fat" value="0%"><label for="0%">0%</label>
         <input type="radio" id="under-10%" name="chose-fat" value="under-10%" checked=""><label for="under-10%">до 10%</label>
         <input type="radio" id="30%" name="chose-fat" value="30%"><label for="30%">30%</label>
         <input type="radio" id="under-30%" name="chose-fat" value="under-30%"><label for="under-30%">до 30%</label>
         <input type="radio" id="up-30%" name="chose-fat" value="up-30%"><label for="up-30%">выше 30%</label>
-        <p class="filter-name">Наполнители</p>
-        <input type="checkbox" id="chocolate" name="ingridients" value="chocolate" checked><label for="chocolate">Шоколадные</label>
-        <input type="checkbox" id="shugar-piece" name="ingridients" value="shugar-piece" checked><label for="shugar-piece">Сахарные присыпки</label>
-        <input type="checkbox" id="fruits" name="ingridients" value="fruits"><label for="fruits">Фрукты</label>
-        <input type="checkbox" id="syrup" name="ingridients" value="syrup"><label for="syrup">Сиропы</label>
-        <input type="checkbox" id="jams" name="ingridients" value="jams"><label for="jams">Джемы</label>
-        <div class="submit-button">
-        <button type="button" name="button">Показать</button>
         </div>
-        </form>
-    </div>
-  </div>
+        <div class="ingridients">
+          <p class="filter-name">Наполнители</p>
+          <input type="checkbox" id="chocolate" name="ingridients" value="chocolate" checked><label for="chocolate">Шоколадные</label>
+          <input type="checkbox" id="shugar-piece" name="ingridients" value="shugar-piece" checked><label for="shugar-piece">Сахарные присыпки</label>
+          <input type="checkbox" id="fruits" name="ingridients" value="fruits"><label for="fruits">Фрукты</label>
+          <input type="checkbox" id="syrup" name="ingridients" value="syrup"><label for="syrup">Сиропы</label>
+          <input type="checkbox" id="jams" name="ingridients" value="jams"><label for="jams">Джемы</label>
+        </div>
+        <div class="submit-button">
+          <button type="button" name="button">Показать</button>
+        </div>
+  </form>
 
   <div class="catalog container">
-    <ul class="item-list">
-      <li>
-        <a href="#"><img src="img/ice_cream_7.jpg" alt="Картинка мороженого" /></a>
-        <span class="price-item">310 Р/кг</span>
+    <ul>
+      <li><a href="#"><img src="img/1.png" alt="Картинка мороженого" /></a>
+          <span class="price-item">310 Р/кг</span>
           <div class="item-description">
             <p class="item-name">
               Сливочное с апельсиновым
@@ -90,7 +88,7 @@
           </div>
       </li>
       <li>
-          <a href="#"><img src="img/ice_cream_8.jpg" alt="Картинка мороженого" /></a>
+          <a href="#"><img src="img/2.png" alt="Картинка мороженого" /></a>
           <span class="price-item">380 Р/кг</span>
           <div class="item-description">
             <p class="item-name">
@@ -100,7 +98,7 @@
           </div>
       </li>
       <li>
-          <a href="#"><img src="img/ice_cream_9.jpg" alt="Картинка мороженого" /></a>
+          <a href="#"><img src="img/3.png" alt="Картинка мороженого" /></a>
           <span class="price-item">355 Р/кг</span>
           <div class="item-description">
             <p class="item-name">
@@ -110,7 +108,7 @@
           </div>
       </li>
       <li>
-          <a href="#"><img src="img/ice_cream_9.jpg" alt="Картинка мороженого" /></a>
+          <a href="#"><img src="img/4.png" alt="Картинка мороженого" /></a>
           <span class="price-item">415 Р/кг</span>
           <div class="item-description">
             <p class="item-name">
@@ -120,7 +118,7 @@
           </div>
       </li>
       <li>
-          <a href="#"><img src="img/ice_cream_9.jpg" alt="Картинка мороженого" /></a>
+          <a href="#"><img src="img/1-1.png" alt="Картинка мороженого" /></a>
           <span class="price-item">325 Р/кг</span>
           <div class="item-description">
             <p class="item-name">
@@ -130,7 +128,7 @@
           </div>
       </li>
       <li>
-        <a href="#"><img src="img/ice_cream_9.jpg" alt="Картинка мороженого" /></a>
+        <a href="#"><img src="img/1-2.png" alt="Картинка мороженого" /></a>
         <span class="price-item">410 Р/кг</span>
           <div class="item-description">
             <p class="item-name">
@@ -140,7 +138,7 @@
           </div>
       </li>
       <li>
-        <a href="#"><img src="img/ice_cream_9.jpg" alt="Картинка мороженого" /></a>
+        <a href="#"><img src="img/2-1.png" alt="Картинка мороженого" /></a>
       <span class="price-item">375 Р/кг</span>
           <div class="item-description">
             <p class="item-name">
@@ -150,7 +148,7 @@
           </div>
       </li>
       <li>
-        <a href="#"><img src="img/ice_cream_9.jpg" alt="Картинка мороженого" /></a>
+        <a href="#"><img src="img/2-2.png" alt="Картинка мороженого" /></a>
         <span class="price-item">320 Р/кг</span>
           <div class="item-description">
             <p class="item-name">
@@ -160,7 +158,7 @@
           </div>
       </li>
       <li>
-        <a href="#"><img src="img/ice_cream_9.jpg" alt="Картинка мороженого" /></a>
+        <a href="#"><img src="img/3-1.png" alt="Картинка мороженого" /></a>
         <span class="price-item">440 Р/кг</span>
           <div class="item-description">
             <p class="item-name">
@@ -170,7 +168,7 @@
           </div>
       </li>
       <li>
-        <a href="#"><img src="img/ice_cream_9.jpg" alt="Картинка мороженого" /></a>
+        <a href="#"><img src="img/3-2.png" alt="Картинка мороженого" /></a>
         <span class="price-item">435 Р/кг</span>
           <div class="item-description">
             <p class="item-name">
@@ -180,7 +178,7 @@
           </div>
       </li>
       <li>
-        <a href="#"><img src="img/ice_cream_9.jpg" alt="Картинка мороженого" /></a>
+        <a href="#"><img src="img/4-1.png" alt="Картинка мороженого" /></a>
       <span class="price-item">355 Р/кг</span>
           <div class="item-description">
             <p class="item-name">
@@ -190,7 +188,7 @@
           </div>
       </li>
       <li>
-        <a href="#"><img src="img/ice_cream_9.jpg" alt="Картинка мороженого" /></a>
+        <a href="#"><img src="img/4-2.png" alt="Картинка мороженого" /></a>
         <span class="price-item">420 Р/кг</span>
           <div class="item-description">
             <p class="item-name">
@@ -214,10 +212,13 @@
       <footer class="main-footer">
         <div class="container">
           <div class="share">
-            <a class="social social-tw" href="#"></a>
-            <a class="social social-inst" href="#"></a>
-            <a class="social social-fb" href="#"></a>
-            <a class="social social-vk" href="#"></a>
+            <ul>
+              <li><a class="social social-tw" href="#"></a></li>
+              <li><a class="social social-inst" href="#"></a></li>
+              <li><a class="social social-fb" href="#"></a></li>
+              <li><a class="social social-vk" href="#"></a></li>
+            </ul>
+
           </div>
           <div class="footer-useful clearfix">
             <div class="firs-column-footer">

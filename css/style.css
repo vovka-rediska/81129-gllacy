@@ -123,8 +123,10 @@ nav li {
 .main-navigation {
   width: 600px;
   float: left;
+  margin-bottom: 40px;
 }
 .user-block {
+  position: relative;
   width: 290 px;
   float: right;
 }
@@ -137,9 +139,19 @@ nav li {
   display: inline-block;
 }
 .contact-info {
+  text-align: right;
   position: absolute;
-  top: 115px;
-  right: 505px;
+  top: 40px;
+  right: 10px;
+}
+.work-time {
+  font-size: 14px;
+  line-height: 16px;
+
+}
+.contact-info a {
+  font-size: 22px;
+  line-height: 24px;
 }
 .clearfix::after {
   content: "";
@@ -147,9 +159,7 @@ nav li {
   display: table;
   clear: both;
 }
-.breadcrumbs {
-  margin-top: 30px;
-}
+
 .breadcrumbs ul {
   list-style: none;
   margin: 0;
@@ -170,13 +180,49 @@ nav li {
 }
 
 .filter {
+  width: 880px;
   margin-bottom: 30px;
 }
-.filtres {
-  display: inline-block;
+
+.filer-sort {
+  width: 195px;
+  float: left;
+  display: block;
+}
+.filer-price {
+  width: 220px;
+  margin-left: 15px;
+  float: left;
+  display: block;
+}
+.fat-content {
+  width: 415px;
+  margin-left: 15px;
+  float: left;
+  display: block;
+}
+.ingridients {
+  width: 705px;
+  float: left;
+  display: block;
+}
+.submit-button {
+  width: 150px;
+  float: left;
+  display: block;
+  margin-left: 15px;
+  padding-top: 55px;
+
+}
+
+
+
+.catalog ul {
+  padding-left: 0;
 }
 
 .catalog li{
+
   display: inline-block;
   vertical-align: top;
   width: 268px;
@@ -185,6 +231,9 @@ nav li {
   margin-bottom: 25px;
 }
 
+.item-name {
+  text-align: center;
+}
 .item-list {
   display: inline-block;
   list-style: none;
@@ -224,7 +273,7 @@ text-decoration: none;
   width: 560px;
   height: 235px;
   background-color: #800d2a;
-  background-image: url(../img/strawberry_font.jpg);
+  background-image: url(../img/strawberry_font.png);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 20px;
@@ -234,7 +283,7 @@ text-decoration: none;
   width: 560px;
   height: 235px;
   background-color: #3e1808;
-  background-image: url(../img/chockolate_font.jpg);
+  background-image: url(../img/chockolate_font.png);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 20px;
@@ -360,7 +409,7 @@ footer ul {
   margin-right: 20px;
   background: #ecf0f1;
 }
-.social {
+.share li {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -370,6 +419,11 @@ footer ul {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
 }
+.social {
+  display: block;
+  padding: 20px;
+}
+
 .footer-useful {
   margin-left: 50px;
   width: 400px;
@@ -393,14 +447,13 @@ footer ul {
   float: right;
 
 }
+.copyright {
+  display: block;
+}
 .footer-copyright {
 
   display: block;
   width: 200px;
   float: right;
   width: 250px;
-}
-
-
-
 }
