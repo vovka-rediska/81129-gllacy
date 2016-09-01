@@ -4,36 +4,62 @@
   <head>
     <meta charset="utf-8">
     <title>Gllacy Shop</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link  href="css/test.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500,700,900&subset=cyrillic" rel="stylesheet">
+
   </head>
   <body>
-    <header class="main-header">
-      <div class="container clearfix">
-        <div class="logo-index">
-          <a href=""><img src="img/logo.svg" width="100" height="50" alt="Глейси"></a>
-        </div>
-        <nav class="main-navigation">
-          <ul class="nav-list">
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">О Компании</a></li>
-          </ul>
-        </nav>
-        <div class="user-block">
-          <ul class="user-block-list">
-            <li><input type="search" name="search" value="Поиск"></li>
-            <li><a href="#">Вход</a></li>
-            <li><a href="#">Пусто</a></li>
-          </ul>
-          <div class="contact-info">
-            <p class="work-time">с 10 до 20, ежедневно</p>
-            <p><a href="#">8 812 450-25-25</a><p>
+    <input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
 
-          </div>
 
-        </div>
-      </div>
-    </header>
+      <div class="content-wrapper">
+        <header class="main-header">
+          <div class="content-wrapper clearfix">
+            <div class="logo-index">
+              <a href="#"><img src="img/logo.svg" width="161" height="70" alt="Глейси"></a>
+            </div>
+            <nav class="main-navigation">
+
+              <ul class="nav-list">
+                <li><a class="navigator" href="#"><span class="nav-list-link">Каталог</span></a></li>
+                <li><a class="navigator" href="#"><span class="nav-list-link">Доставка и оплата</span></a></li>
+                <li><a class="navigator" href="#"><span class="nav-list-link">О Компании</span></a></li>
+              </ul>
+            </nav>
+
+
+            <div class="user-block">
+              <div class="user-block-item">
+                <div class="search">
+                  <a class="user-block-link search-link" href="#"></a>
+                  <form class="search-form" action="/echo" method="post">
+                    <label class="search-input-label" for="search">
+                      <input class="search-input" type="search" id="search" name="search" placeholder="Поиск:" required>
+                      <span class="search-input-name">Пoиск</span>
+                    </label>
+                    <button class="search-btn">Поиск</button>
+                  </form>
+                </div>
+                </div>
+
+
+              <!-- SingIn -->
+              <div class="user-block-item">
+                <div class="login">
+                  <a class="user-block-link login-link" href="#">вход</a>
+                </div>
+              </div>
+              <div class="user-block-item">
+                <div class="cart">
+                  <a class="user-block-link cart-link" href="#">пусто</a>
+                </div>
+              </div>
+            </div>
+          </header>
+
+
   <main class="container">
     <div class="breadcrumbs">
       <ul class="crumbs-list">
@@ -76,126 +102,158 @@
         </div>
   </form>
 
-  <div class="catalog container">
+  <div class="catalog">
     <ul>
-      <li><a href="#"><img src="img/1.png" alt="Картинка мороженого" /></a>
-          <span class="price-item">310 Р/кг</span>
-          <div class="item-description">
-            <p class="item-name">
-              Сливочное с апельсиновым
-             джемом и цитрусовой стружкой
-            </p>
-          </div>
+      <li>
+        <div class="popular-hit">
+          <a href="#"><img src="img/1.png" alt="Картинка мороженого" /></a>
+            <div class="price">
+            <span class="number">310</span><span class="rubznak">i</span><span class="weight">/кг<span></p>
+            </div>
+            <div class="item-description">
+              <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            </div>
+        </div>
+
       </li>
       <li>
+        <div class="popular-hit">
           <a href="#"><img src="img/2.png" alt="Картинка мороженого" /></a>
-          <span class="price-item">380 Р/кг</span>
-          <div class="item-description">
-            <p class="item-name">
-              Сливочно-кофейное с
-               кусочками шоколада
-            </p>
-          </div>
+            <div class="price">
+            <span class="number">380</span><span class="rubznak">i</span><span class="weight">/кг<span></p>
+            </div>
+            <div class="item-description">
+              <p>Сливочно-кофейное с
+               кусочками шоколада</p>
+            </div>
+        </div>
       </li>
       <li>
+        <div class="popular-hit">
           <a href="#"><img src="img/3.png" alt="Картинка мороженого" /></a>
-          <span class="price-item">355 Р/кг</span>
-          <div class="item-description">
-            <p class="item-name">
-              Сливочно-клубничное с
-               присыпкой из белого шоколада
-            </p>
-          </div>
+            <div class="price">
+            <span class="number">355</span><span class="rubznak">i</span><span class="weight">/кг<span></p>
+            </div>
+            <div class="item-description">
+              <p>Сливочно-клубничное с
+               присыпкой из белого шоколада</p>
+            </div>
+        </div>
       </li>
       <li>
+        <div class="popular-hit">
           <a href="#"><img src="img/4.png" alt="Картинка мороженого" /></a>
-          <span class="price-item">415 Р/кг</span>
-          <div class="item-description">
-            <p class="item-name">
-              Сливочное крем-брюле с
-              карамельной подливкой
-            </p>
+            <div class="price">
+            <span class="number">415</span><span class="rubznak">i</span><span class="weight">/кг<span></p>
+            </div>
+            <div class="item-description">
+              <p>  Сливочное крем-брюле с
+                карамельной подливкой</p>
+            </div>
           </div>
       </li>
       <li>
-          <a href="#"><img src="img/1-1.png" alt="Картинка мороженого" /></a>
-          <span class="price-item">325 Р/кг</span>
-          <div class="item-description">
-            <p class="item-name">
-              Сливочное с брусничным
-               джемом
-            </p>
+        <div class="popular-hit">
+          <a href="#"><img src="img/5.png" alt="Картинка мороженого" /></a>
+            <div class="price">
+            <span class="number">325</span><span class="rubznak">i</span><span class="weight">/кг<span></p>
+            </div>
+            <div class="item-description">
+              <p>Сливочное с брусничным
+                 джемом</p>
+            </div>
+          </div>
+
+      </li>
+      <li>
+        <div class="popular-hit">
+          <a href="#"><img src="img/6.png" alt="Картинка мороженого" /></a>
+            <div class="price">
+            <span class="number">410</span><span class="rubznak">i</span><span class="weight">/кг<span></p>
+            </div>
+            <div class="item-description">
+              <p>Сливочно-черничное с цельными
+              ягодами черники</p>
+            </div>
+          </div>
+
+      </li>
+      <li>
+        <div class="popular-hit">
+          <a href="#"><img src="img/7.png" alt="Картинка мороженого" /></a>
+            <div class="price">
+            <span class="number">375</span><span class="rubznak">i</span><span class="weight">/кг<span></p>
+            </div>
+            <div class="item-description">
+              <p>Cливочно-лимонное с
+              карамельной присыпкой</p>
+            </div>
           </div>
       </li>
       <li>
-        <a href="#"><img src="img/1-2.png" alt="Картинка мороженого" /></a>
-        <span class="price-item">410 Р/кг</span>
-          <div class="item-description">
-            <p class="item-name">
-              Сливочно-черничное с цельными
-              ягодами черники
-            </p>
+        <div class="popular-hit">
+          <a href="#"><img src="img/8.png" alt="Картинка мороженого" /></a>
+            <div class="price">
+            <span class="number">320</span><span class="rubznak">i</span><span class="weight">/кг<span></p>
+            </div>
+            <div class="item-description">
+              <p>Сливочное с шоколадной
+                стружкой</p>
+            </div>
           </div>
+
       </li>
       <li>
-        <a href="#"><img src="img/2-1.png" alt="Картинка мороженого" /></a>
-      <span class="price-item">375 Р/кг</span>
-          <div class="item-description">
-            <p class="item-name">
-              Сливочно-лимонное с
-              карамельной присыпкой
-            </p>
+        <div class="popular-hit">
+          <a href="#"><img src="img/9.png" alt="Картинка мороженого" /></a>
+            <div class="price">
+            <span class="number">440</span><span class="rubznak">i</span><span class="weight">/кг<span></p>
+            </div>
+            <div class="item-description">
+              <p>Сливочно-ванильное с
+               кусочками шоколада</p>
+            </div>
           </div>
+
       </li>
       <li>
-        <a href="#"><img src="img/2-2.png" alt="Картинка мороженого" /></a>
-        <span class="price-item">320 Р/кг</span>
-          <div class="item-description">
-            <p class="item-name">
-              Сливочное с шоколадной
-              стружкой
-            </p>
+        <div class="popular-hit">
+          <a href="#"><img src="img/10.png" alt="Картинка мороженого" /></a>
+            <div class="price">
+            <span class="number">435</span><span class="rubznak">i</span><span class="weight">/кг<span></p>
+            </div>
+            <div class="item-description">
+              <p>Сливочное с ментоловым
+               сиропом</p>
+            </div>
           </div>
+
       </li>
       <li>
-        <a href="#"><img src="img/3-1.png" alt="Картинка мороженого" /></a>
-        <span class="price-item">440 Р/кг</span>
-          <div class="item-description">
-            <p class="item-name">
-              Сливочно-ванильное с
-               кусочками шоколада
-            </p>
+        <div class="popular-hit">
+          <a href="#"><img src="img/11.png" alt="Картинка мороженого" /></a>
+            <div class="price">
+            <span class="number">355</span><span class="rubznak">i</span><span class="weight">/кг<span></p>
+            </div>
+            <div class="item-description">
+              <p>Сливочное с кусочками черного
+              шоколада</p>
+            </div>
           </div>
+
       </li>
       <li>
-        <a href="#"><img src="img/3-2.png" alt="Картинка мороженого" /></a>
-        <span class="price-item">435 Р/кг</span>
-          <div class="item-description">
-            <p class="item-name">
-              Сливочное с ментоловым
-               сиропом
-            </p>
+        div class="popular-hit">
+          <a href="#"><img src="img/11.png" alt="Картинка мороженого" /></a>
+            <div class="price">
+            <span class="number">420</span><span class="rubznak">i</span><span class="weight">/кг<span></p>
+            </div>
+            <div class="item-description">
+              <pСливочное с мятным
+              сиропом</p>
+            </div>
           </div>
-      </li>
-      <li>
-        <a href="#"><img src="img/4-1.png" alt="Картинка мороженого" /></a>
-      <span class="price-item">355 Р/кг</span>
-          <div class="item-description">
-            <p class="item-name">
-              Сливочное с кусочками черного
-              шоколада
-            </p>
-          </div>
-      </li>
-      <li>
-        <a href="#"><img src="img/4-2.png" alt="Картинка мороженого" /></a>
-        <span class="price-item">420 Р/кг</span>
-          <div class="item-description">
-            <p class="item-name">
-              Сливочное с мятным
-              сиропом
-            </p>
-          </div>
+
       </li>
     </ul>
     </div>
@@ -240,6 +298,8 @@
             <p>Сделано в <a href="#">HTML Academy</a>© 2016</p>
           </div>
         </div>
+      </div>
+    </div>
       </footer>
     </body>
   </html>
