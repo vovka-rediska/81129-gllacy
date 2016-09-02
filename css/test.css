@@ -88,10 +88,8 @@ a {
 .help {
   background-color: rgba(0, 0, 0, 0.4); /* для демо */
 }
-.main-header {
-  height: 100px;
 
-}
+
 .navigator {
   padding: 5px 14px;
   font-size: 16px;
@@ -99,23 +97,21 @@ a {
   line-height: 18px;
   color: #ffffff;
   text-decoration: none;
+
 }
 
 
 .logo-index {
   float: left;
-  width: 161px;
-  height: 71px;
   margin-right: 15px;
 }
 
 .nav-list {
   float: left;
-  width:600px;
   padding: 0;
   padding-top: 25px;
   margin: 0;
-  margin-right: 15px;
+
   list-style: none;
 
 
@@ -151,7 +147,6 @@ a {
 }
 .user-block-item {
   display: inline-block;
-    min-height: 32px;
     margin-top: 14px;
     font-size: 14px;
     vertical-align: top;
@@ -374,42 +369,45 @@ a {
 }
 
 .special-offer {
+
   margin-bottom: 40px;
   color: #ffffff;
 }
 .special-ofer-left {
+  box-sizing: border-box;
+  padding:20px 20px 25px 20px;
   float: left;
   width: 560px;
-  height: 230px;
-  margin-right: 25px;
+  min-height: 230px;
+
   background: url(../img/strawberry_font.png) no-repeat center;
+  background-size: cover;
+    border-radius: 15px;
 }
 .special-ofer-right {
+  box-sizing: border-box;
+    padding: 20px 20px 25px 20px;
   float: right;
   width: 560px;
-  height: 230px;
+  min-height: 230px;
   background: url(../img/chockolate_font.png) no-repeat center;
-
-}
-.box-content span {
+  background-size: cover;
+    border-radius: 15px;
+  }
+.special-offer-title {
   font-size: 35px;
+  font-weight: bold;
   line-height: 41px;
-  font-weight: bold;
 }
-
-.box-content {
-  position: relative;
-  display: inline-block;
-  margin: 25px 20px;
-}
-.box-content p {
+.special-offer-description {
   font-size: 18px;
-  line-height: 25px;
   font-weight: bold;
+  line-height: 22px;
+  color: #fff;
+  
 }
 .btn {
-  position: absolute;
-  right: 0;
+  float: right;
   display: inline-block;
   font-size: 18px;
   line-height: 24px;
@@ -452,18 +450,18 @@ a {
   vertical-align: top;
   margin-left: 25px;
 }
-.popular-hit {
+.photo {
   position: relative;
+}
+.popular-hit {
   width: 265px;
-  height: 328px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 .hit-image {
   position: absolute;
+  top: 0;
   width: 60px;
   height: 60px;
-  top: 0;
-  left: 0;
 
 }
 .popular li:first-child {
@@ -471,8 +469,7 @@ a {
 }
 .price {
   position: absolute;
-  bottom: 40px;
-  left: 0;
+  bottom: -20px;
   color: #ffffff;
 }
 .number {
@@ -494,12 +491,18 @@ a {
   text-transform: uppercase;
 }
 .item-description {
+  padding-top: 15px;
   text-align: center;
   font-size: 16px;
   line-height: 22px;
-  font-weight: medium;
+  font-weight: 100;
   color: #ffffff;
-text-decoration: underline;
+
+}
+.item-description-link {
+  display: inline;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 
@@ -859,7 +862,9 @@ footer ul {
 }
 
 /*CSS для Каталога*/
-
+.catalog {
+  margin-bottom: 40px;
+}
 .catalog ul {
   margin: 0;
   padding: 0;
@@ -868,4 +873,94 @@ footer ul {
 .catalog li {
   display: inline-block;
   vertical-align: top;
+  margin-left: 25px;
+
+}
+.catalog li:first-child,
+.catalog li:nth-child(5),
+.catalog li:nth-child(9) {
+  margin-left: 0;
+}
+.crumbs-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.crumbs-list li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+.crumbs-list a {
+  display: inline-block;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.current-page {
+  color: #ffffff;
+
+}
+
+.filter {
+  margin-bottom: 40px;
+}
+.filter-item {
+  display: inline-block;
+  margin-left: 15px;
+
+}
+.filter-item:first-child,
+.filter-item:nth-child(4) {
+  margin-left: 0;
+}
+.filter-item label {
+  color: #ffffff;
+}
+.filter-name {
+  padding-left: 15px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: lighter;
+  color: #ffffff;
+}
+.filer-sort {
+  width: 195px;
+}
+.filer-price {
+  width: 220px;
+}
+.fat-content {
+  width: 415px;
+}
+.ingridients {
+  width: 703px;
+}
+.submit-button {
+  width: 150px;
+}
+
+.page-list-block {
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.page-numeration {
+  float: right;
+}
+.page-list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+  list-style: none;
+}
+.page-list li {
+  display: inline-block;
+}
+.page-list a {
+  padding: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: lighter;
 }
