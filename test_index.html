@@ -24,8 +24,8 @@
               <ul class="nav-list">
                 <li>
                   <a class="navigator" href="#"><span class="nav-list-link">Каталог</span></a>
-                    <ul class="sub-menu">
-                        <li><b class="sub-menu-title">Новинки</b></li>
+                    <ul>
+                        <li><a class="sub-menu-title" href="#">Новинки</a></li>
                         <li><a href="#">Сливочное</a></li>
                         <li><a href="#">Щербеты</a></li>
                         <li><a href="#">Фруктовый лед</a></li>
@@ -43,11 +43,8 @@
                 <div class="search">
                   <a class="user-block-link search-link" href="#"></a>
                   <form class="search-form" action="/echo" method="post">
-                    <label class="search-input-label" for="search">
-                      <input class="search-input" type="search" id="search" name="search" placeholder="Поиск:" required>
+                    <input class="search-input" type="search" id="search" name="search" placeholder="Что ищем?" required>
 
-                    </label>
-                    <button class="search-btn">Поиск</button>
                   </form>
                 </div>
                 </div>
@@ -55,8 +52,18 @@
 
               <!-- SingIn -->
               <div class="user-block-item">
-                <div class="login">
+                <div class="login clearfix">
                   <a class="user-block-link login-link" href="#">вход</a>
+
+                    <form class="login-form" action="index.html" method="post">
+                      <input class="login-input" type="login" name="login" placeholder="Электронная почта" required>
+                      <input class="password-input" type="password" name="password" placeholder="Пароль" required>
+                      <button class="login-btn" type="button" name="button">Войти</button>
+                      <a class="login-form-link" href="#">Забыли пароль?</a>
+                      <a class="login-form-link" href="#">Новая регистрация</a>
+                    </form>
+
+
                 </div>
               </div>
               <div class="user-block-item">
@@ -99,7 +106,7 @@
             </div>
           </div>
           <div class="special-offer clearfix">
-            <div class="special-ofer-left">
+            <div class="special-ofer-left clearfix">
                 <span class="special-offer-title">Малинка даром</span>
                   <p class="special-offer-description">
                     При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
@@ -107,7 +114,7 @@
                   </p>
                     <a class="btn" href="#">Хочу варенье!</a>
             </div>
-            <div class="special-ofer-right">
+            <div class="special-ofer-right clearfix">
                 <span class="special-offer-title">Шоколадки даром</span>
                 <p class="special-offer-description">
                   При покупке 2 кг пломбира, добавим в ваш заказ
@@ -231,14 +238,14 @@
               </div>
             </div>
             <div class="index-right">
-              <div class="index-right-background">
+              <div class="index-right-background clearfix">
                 <p class="submit-title">
                   Подпишись на нашу сладкую рассылку и будете всегда в курсе
                   всего самого вкусного, что у нас происходит. Обещаем не спамить
                   и не слать всякой не нужной ерунды. Честно =))
                 </p>
-                <form class="submit-form" action="index.html" method="post">
-                  <input type="text" name="email" value="" placeholder="Электронная почта">
+                <form class="submit-form clearfix" action="index.html" method="post">
+                  <input class="submit" type="text" name="email" value="" placeholder="Электронная почта">
                   <input class="btn btn-submit" type="submit" value="Отправить">
                 </form>
                 </div>
@@ -253,7 +260,7 @@
           <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=NFkTItrDHVQHb0mVQBIAuPnrR6XBRo2b&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
             <div class="content-wrapper">
               <div class="adress-block">
-                  <p class="map-text">Адрес главного офиса и офлайн магазина:<br><b class="map-adress">Ул. Большая Конюшенная <br>19/8, Санкт-Петербург</b></p>
+                  <p class="map-text">Адрес главного офиса и офлайн магазина:<b class="map-adress">Ул. Большая Конюшенная <br>19/8, Санкт-Петербург</b></p>
                   <p class="map-text">Для заказов по телефону:<br><b class="map-phone">8 812 450-25-25</b><br>(с 10 до 20 ежедневно)</p>
                   <input type="button" class="btn btn-map" name="feedback" value="Форма обратной связи">
               </div>
@@ -266,7 +273,6 @@
       </div>
 
       <footer class="main-footer">
-        <div class="container clearfix">
           <div class="share">
             <ul>
               <li><a class="sprite social-tw" href="#"></a></li>
@@ -289,12 +295,24 @@
             <a class="copyright" href="#"><img src="img/logo-ico.png" alt="" /></a>
             <p>Сделано в <a class="copyright-title" href="#">HTML Academy</a>© 2016</p>
           </div>
-        </div>
-      </footer>
+    </footer>
       </div>
 
 
 
+  <script>
+  var link = document.querySelector(".login-link");
+  var popup = document.querySelector(".login-form");
 
+  link.addEventListener("mouseover", function(event) {
+  event.preventDefault();
+  popup.classList.add("login-form-show");
+});
+  popup.addEventListener("mouseout", function(event) {
+  event.preventDefault();
+  popup.classList.remove("login-form-show");
+  });
+
+  </script>
   </body>
   </html>
