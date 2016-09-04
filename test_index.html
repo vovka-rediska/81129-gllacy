@@ -15,16 +15,18 @@
 
     <div class="site-wrapper">
       <div class="content-wrapper">
+  <!-- ХЕДЕР-->
         <header class="main-header clearfix">
             <div class="logo-index">
               <a href="#"><img src="img/logo.svg" width="161" height="70" alt="Глейси"></a>
             </div>
             <nav class="main-navigation">
 
-              <ul class="nav-list">
+              <ul class="main-menu">
                 <li>
                   <a class="navigator" href="#"><span class="nav-list-link">Каталог</span></a>
-                    <ul>
+  <!-- ПОДМЕНЮ -->
+                      <ul class="sub-menu">
                         <li><a class="sub-menu-title" href="#">Новинки</a></li>
                         <li><a href="#">Сливочное</a></li>
                         <li><a href="#">Щербеты</a></li>
@@ -36,29 +38,39 @@
                 <li><a class="navigator" href="#"><span class="nav-list-link">О Компании</span></a></li>
               </ul>
             </nav>
-
-
+<!-- ПОИСК -->
             <div class="user-block">
               <div class="user-block-item">
-                <div class="search">
-                  <a class="user-block-link search-link" href="#"></a>
-                  
-                    <input class="search-input" type="search" id="search" name="search" placeholder="Что ищем?" required>
+                <a class="user-block-link search-link" href="#"></a>
+                  <div class="modal-content-wrapper">
+                    <div class="search-input">
+                      <input type="search" id="search" name="search" placeholder="Что ищем?" required>
+                    </div>
+                  </div>
 
-                
-                </div>
-                </div>
+              </div>
 
+<!-- ВХОД -->
 
-              <!-- SingIn -->
-              <div class="user-block-item">
-                <div class="login clearfix">
+            <div class="user-block-item">
                   <a class="user-block-link login-link" href="#">вход</a>
-
-
-
+              <div class="modal-content-wrapper">
+                <div class="modal-content">
+                  <form class="login-form" action="index.html" method="post">
+                    <input class="login-input" type="text" name="login" placeholder="Электронная почта" required>
+                    <input class="password-input" type="password" name="password" placeholder="Пароль" required>
+                    <button class="login-btn" type="button" name="button">Войти</button>
+                    <a class="login-form-link" href="#">Забыли пароль?</a>
+                    <a class="login-form-link" href="#">Новая регистрация</a>
+                  </form>
                 </div>
               </div>
+            </div>
+
+
+<!-- КОРЗИНА -->
+
+
               <div class="user-block-item">
                 <div class="cart">
                   <a class="user-block-link cart-link" href="#">пусто</a>
@@ -66,11 +78,7 @@
               </div>
             </div>
 
-
-
-
-
-
+<!-- КОНТАКТНАЯ ИНФОРМАЦИЯ -->
               <div class="contact-info">
                 <p class="work-time">с 10 до 20, ежедневно</p>
                 <a class="phone" href="#">8 812 450-25-25</a>
@@ -105,7 +113,7 @@
                     При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
                     малинового варенья бесплатно
                   </p>
-                    <a class="btn" href="#">Хочу варенье!</a>
+                    <a class="btn special-offer-btn" href="#">Хочу варенье!</a>
             </div>
             <div class="special-ofer-right clearfix">
                 <span class="special-offer-title">Шоколадки даром</span>
@@ -116,7 +124,7 @@
 
 
 
-              <a class="btn" href="#">Хочу шоколадки!</a>
+              <a class="btn special-offer-btn" href="#">Хочу шоколадки!</a>
             </div>
           </div>
 
@@ -265,7 +273,7 @@
 
       </div>
 
-      <footer class="main-footer">
+      <footer class="main-footer clearfix">
           <div class="share">
             <ul>
               <li><a class="sprite social-tw" href="#"></a></li>
@@ -282,29 +290,21 @@
                 <li><a href="#">Экологические стандарты</a></li>
               </ul>
             </div>
-
-
           <div class="footer-copyright">
             <a class="copyright" href="#"><img src="img/logo-ico.png" alt="" /></a>
             <p>Сделано в <a class="copyright-title" href="#">HTML Academy</a>© 2016</p>
           </div>
         </div>
     </footer>
-    <div class="modal-content">
-      <form class="login-form" action="index.html" method="post">
-        <input class="login-input" type="text" name="login" placeholder="Электронная почта" required>
-        <input class="password-input" type="password" name="password" placeholder="Пароль" required>
-        <button class="login-btn" type="button" name="button">Войти</button>
-        <a class="login-form-link" href="#">Забыли пароль?</a>
-        <a class="login-form-link" href="#">Новая регистрация</a>
+    <div class="feedback">
+      <button class=close-btn type="button" name="button"></button>
+      <h3>Мы обязательно вам ответим!</h3>
+      <form class="feedback-form clearfix" action="index.html" method="post">
+        <input type="text" name="name" placeholder="Как вас зовут?" required="Заполните пожалуйста поле">
+        <input type="email" name="email" placeholder="Ваша почта для ответа?" required="Заполните пожалуйста поле">
+        <textarea class="textarea" name="comment" cols="40" rows="3">Напишите что-нибудь...</textarea>
+        <button class="feedback-btn btn" type="button" name="button">Отправить</button>
       </form>
     </div>
-
-
-
-
-
- <script>src="js/index.js"</script>
-
   </body>
   </html>
