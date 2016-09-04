@@ -55,13 +55,6 @@
                 <div class="login clearfix">
                   <a class="user-block-link login-link" href="#">вход</a>
 
-                    <form class="login-form" action="index.html" method="post">
-                      <input class="login-input" type="login" name="login" placeholder="Электронная почта" required>
-                      <input class="password-input" type="password" name="password" placeholder="Пароль" required>
-                      <button class="login-btn" type="button" name="button">Войти</button>
-                      <a class="login-form-link" href="#">Забыли пароль?</a>
-                      <a class="login-form-link" href="#">Новая регистрация</a>
-                    </form>
 
 
                 </div>
@@ -295,24 +288,36 @@
             <a class="copyright" href="#"><img src="img/logo-ico.png" alt="" /></a>
             <p>Сделано в <a class="copyright-title" href="#">HTML Academy</a>© 2016</p>
           </div>
+        </div>
     </footer>
-      </div>
+    <div class="modal-content">
+      <form class="login-form" action="index.html" method="post">
+        <input class="login-input" type="text" name="login" placeholder="Электронная почта" required>
+        <input class="password-input" type="password" name="password" placeholder="Пароль" required>
+        <button class="login-btn" type="button" name="button">Войти</button>
+        <a class="login-form-link" href="#">Забыли пароль?</a>
+        <a class="login-form-link" href="#">Новая регистрация</a>
+      </form>
+    </div>
 
 
 
-  <script>
+
+
+ <script>
   var link = document.querySelector(".login-link");
-  var popup = document.querySelector(".login-form");
+  var popup = document.querySelector(".modal-content");
 
   link.addEventListener("mouseover", function(event) {
   event.preventDefault();
-  popup.classList.add("login-form-show");
+  popup.classList.add("modal-content-show");
 });
   popup.addEventListener("mouseout", function(event) {
   event.preventDefault();
-  popup.classList.remove("login-form-show");
+  popup.classList.remove("modal-content-show");
   });
 
-  </script>
+</script>
+
   </body>
   </html>
