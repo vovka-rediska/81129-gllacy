@@ -159,10 +159,10 @@ h3 {
 
 /*ПОЛЕ ОБРАТНОЙ СВЯЗИ*/
 
+}
 .feedback {
   display: none;
   position: absolute;
-  bottom: 520px;
   left: 550px;
   box-sizing: border-box;
   width: 477px;
