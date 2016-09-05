@@ -263,7 +263,7 @@
               <div class="adress-block">
                   <p class="map-text">Адрес главного офиса и офлайн магазина:<b class="map-adress">Ул. Большая Конюшенная <br>19/8, Санкт-Петербург</b></p>
                   <p class="map-text">Для заказов по телефону:<br><b class="map-phone">8 812 450-25-25</b><br>(с 10 до 20 ежедневно)</p>
-                  <input type="button" class="btn btn-map" name="feedback" value="Форма обратной связи">
+                  <a class="btn-map" href="#">Форма обратной свя</a>
               </div>
             </div>
 
@@ -297,14 +297,62 @@
         </div>
     </footer>
     <div class="feedback">
-      <button class=close-btn type="button" name="button"></button>
+      <button class="close-btn" type="button" name="button"></button>
       <h3>Мы обязательно вам ответим!</h3>
       <form class="feedback-form clearfix" action="index.html" method="post">
-        <input type="text" name="name" placeholder="Как вас зовут?" required="Заполните пожалуйста поле">
+        <input type="text" name="yourname" placeholder="Как вас зовут?" required="Заполните пожалуйста поле">
         <input type="email" name="email" placeholder="Ваша почта для ответа?" required="Заполните пожалуйста поле">
         <textarea class="textarea" name="comment" cols="40" rows="3">Напишите что-нибудь...</textarea>
         <button class="feedback-btn btn" type="button" name="button">Отправить</button>
       </form>
     </div>
+
+    <script>
+        var link document.querySelector(".btn-map");
+        var popup document.querySelector(".feedback");
+        var close document.querySelector(".close-btn");
+        var yourname document.querySelector("[name=yourname]");
+        var form document.querySelector("form");
+        var email document.querySelector("[name=email]");
+         var storage = localStorage.getItem("yourname");
+
+        link.addEventListener("click", function(event) {
+          event.preventDefault();
+          popup.clasList.add("feedback-show");
+          if (storage) {
+            yourname.value = storage;
+            email.focus();
+         } else {
+            yourname.focus();
+          }
+        });
+
+        close.addEventListener("click", function(event) {
+          event.preventDefault();
+          close.clasList.remove("feedback-show");
+          popup.classList.remove("modal-error");
+        });
+
+        form.addEventListener("submit", function(event) {
+          if (!yourname.value || !email.value) {
+           event.preventDefault();
+           popup.classList.remove("modal-error");
+          popup.offsetWidth = popup.offsetWidth;
+           popup.classList.add("modal-error");
+
+         } else {
+          localStorage.setItem("yourname", yourname.value);
+        }
+        });
+        window.addEventListener("keydown", function(event) {
+         if (event.keyCode === 27) {
+           if (popup.classList.contains("feedback-show")) {
+             popup.classList.remove("feedback-show");
+             popup.classList.remove("modal-error");
+           }
+         }
+       });
+    </script>
+
   </body>
   </html>
