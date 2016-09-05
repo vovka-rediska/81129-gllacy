@@ -103,7 +103,28 @@ h3 {
   float: left;
   margin-right: 15px;
 }
+/*ПоДЛОЖКА У МОРОЖЕНОГО*/
+.underlayer {
+  position: absolute;
+    top: -5px;
+    left: -15px;
+    display: block;
+    
 
+}
+.icecream-underlayer {
+  position: relative;
+  width: 295px;
+  min-height: 405px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+
+}
+.btn-icecream {
+  position: absolute;
+    bottom: 20px;
+    left: 45px;
+}
 
 /*ПОЛЕ ОБРАТНОЙ СВЯЗИ*/
 .feedback {
@@ -829,6 +850,7 @@ outline: none;
 }
 .photo {
   position: relative;
+
 }
 .popular-hit {
   width: 265px;
@@ -868,7 +890,7 @@ outline: none;
   text-transform: uppercase;
 }
 .item-description {
-  padding-top: 15px;
+  padding-top: 5px;
   text-align: center;
   font-size: 16px;
   line-height: 22px;
