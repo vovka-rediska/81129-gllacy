@@ -161,13 +161,16 @@ h3 {
 
 .feedback {
   display: none;
-  position: relative;
+  position: absolute;
+  bottom: 520px;
+  left: 550px;
   box-sizing: border-box;
   width: 477px;
   margin: 0 auto;
   background: #ffffff;
   border-radius: 15px;
   padding: 20px 25px 25px 25px;
+
 }
 .feedback-show {
   display: block;
@@ -204,6 +207,7 @@ h3 {
   color: #999999;
   border: 1px solid #d3d3d2;
   outline: none;
+  resize: none;
 }
 .feedback-btn {
   float: right;
