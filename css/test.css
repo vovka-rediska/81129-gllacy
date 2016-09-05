@@ -105,11 +105,12 @@ h3 {
 }
 /*ПоДЛОЖКА У МОРОЖЕНОГО*/
 .underlayer {
+  z-index: 5;
   position: absolute;
     top: -5px;
     left: -15px;
-    display: block;
-    
+    display: none;
+
 
 }
 .icecream-underlayer {
@@ -122,7 +123,7 @@ h3 {
 }
 .btn-icecream {
   position: absolute;
-    bottom: 20px;
+    bottom: 25px;
     left: 45px;
 }
 
@@ -853,8 +854,12 @@ outline: none;
 
 }
 .popular-hit {
+  position: relative;
   width: 265px;
   margin-bottom: 35px;
+}
+.popular-hit:hover .underlayer {
+  display: block;
 }
 .hit-image {
   position: absolute;
