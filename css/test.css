@@ -181,7 +181,10 @@ h3 {
 .feedback-form {
   box-sizing: border-box;
       position: absolute;
-      left: 550px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
       top: 300px;
       width: 480px;
       height: 445px;
@@ -276,8 +279,12 @@ h3 {
   list-style: none;
 }
 .main-menu > li {
+  margin-left: 10px;
   display: inline-block;
   position: relative;
+}
+.main-menu > li:first-child {
+  margin-left: 0;
 }
 .main-menu > li > a {
   display: block;
@@ -286,12 +293,19 @@ h3 {
   font-weight: bold;
   line-height: 18px;
   padding: 8px 15px;
-
 }
+
 .main-menu > li:hover .main-menu-link {
   background: #ffffff;
   border-radius: 25px;
   color: #000000;
+}
+.current-link {
+  border-radius: 25px;
+  background: #d07058;
+}
+.sub-menu-current-link {
+  background: #d07058;
 }
 .main-menu > li:active .main-menu-link {
   box-shadow: inset 0px 2px 2px 0px #000000;
@@ -323,18 +337,18 @@ h3 {
 .sub-menu > li:active .sub-menu-link {
   background: #f6b5a5;
 }
-.sub-menu::after {
+.main-menu .sub-menu::after {
   content: "";
   position: absolute;
-  top: 40px;
+  top: 38px;
   left: 6px;
   width: 128px;
-  height: 1px;
+  height: 2px;
   background: rgba(0, 0, 0, 0.2);
 }
 
 .nav-list-link {
-  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 
@@ -624,6 +638,7 @@ outline: none;
   border-radius: 25px;
   background: #ffffff;
   padding: 7px 20px 7px 40px;
+  color: #000000;
 }
 .cart-link-catalog::before {
   content: "";
@@ -744,8 +759,12 @@ outline: none;
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
+}
+..slider-controls label:hover {
+  background-color: #ffffff;
 
 }
+
 #btn-1:checked ~ .site-wrapper #slide1,
 #btn-2:checked ~ .site-wrapper #slide2,
 #btn-3:checked ~ .site-wrapper #slide3 {
@@ -813,16 +832,13 @@ outline: none;
 }
 .btn {
   border: none;
-
   font-size: 18px;
   line-height: 24px;
   padding: 12px 15px;
   font-weight: bold;
   vertical-align: top;
-
   color: #ffffff;
   text-decoration: none;
-
   background: #f26843;
   background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
@@ -1128,7 +1144,7 @@ outline: none;
   border: none;
 
 }
-
+                                                                                  /*ДЛЯ ОБРАТНОЙ СВЯЗИ*/
 .map {
   position: relative;;
 }
@@ -1139,23 +1155,24 @@ outline: none;
   right: 25px;
   overflow: auto;
   width: 240px;
-  min-height: 305px;
   max-height: 410px;
-  padding: 29px 25px 10px;
+  padding: 30px 25px;
   border-radius: 15px;
   background-color: #fff;
 
 }
 .map-adress {
   display: block;
-      margin-top: 3px;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 24px;
-      color: #343434;
+  margin-bottom: 25px;
+  margin-top: 3px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #343434;
 }
 .map-phone {
   display: block;
+  margin-bottom: 10px;
   margin-top: 3px;
   font-size: 18px;
   font-weight: 700;
@@ -1163,33 +1180,33 @@ outline: none;
   color: #343434;
 }
 .map-text {
-  display: block;
-    margin-bottom: 17px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    color: #343434;
+width: 175px;
+display: block;
+margin-bottom: 10px;
+margin-top: 0;
+margin-bottom: 10px;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+color: #343434;
 }
-
+                                                                                      /*КНОПКА*/
 .btn-map {
-  position: absolute;
+  margin-top: 25px;
   border: none;
   left: 25px;
   border: none;
-
   font-size: 18px;
   line-height: 24px;
   padding: 12px 20px;
   font-weight: bold;
   vertical-align: top;
-
   color: #ffffff;
   text-decoration: none;
-
   background: #f26843;
-  background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
-  background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 100px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   cursor: pointer;
@@ -1335,7 +1352,7 @@ border-bottom: 2px solid rgba(249, 172, 159, 0.3);
     background-position: -5px -106px;
 
 }
-
+                                                                                /*КОПИРАЙТ*/
 
 .copyright {
   display: block;
@@ -1429,15 +1446,84 @@ border-bottom: 2px solid rgba(249, 172, 159, 0.3);
   color: #ffffff;
 }
 
-                                                                                  /*ФИЛЬТРЫ*/
+.filter-item {
+  display: inline-block;
+  vertical-align: top;
+  }                                                                                  /*ФИЛЬТРЫ*/
+.range-filter {
+  padding-top: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+}
+.range-controls {
+  position: relative;
+    height: 15px;
+    padding-top: 17px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 15px;
+}
+
+.range-controls .scale {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.range-controls .toggle {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #f8f7f4;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+.price-controls {
+  padding-left: 25px;
+  padding-bottom: 10px;
+  width: 200px;
+  font-size: 0;
+}
+.price-controls label {
+  font-size: 14px;
+  display: inline-block;
+color: white;
+}
+.price-controls input {
+  font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 14px;
+    width: 55px;
+
+    color: #f8f7f4;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    margin-left: 10px;
+}
+.max-price {
+  text-align: right;
+}
+
+
+
 .filter {
   margin-bottom: 40px;
 }
-.filter-item {
-  display: inline-block;
-  margin-left: 15px;
 
-}
 .filter-item:first-child,
 .filter-item:nth-child(4) {
   margin-left: 0;
