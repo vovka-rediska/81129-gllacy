@@ -14,28 +14,28 @@
     <input type="radio" id="btn-3" name="toggle">
 
     <div class="site-wrapper">
-      <div class="content-wrapper">
-  <!-- ХЕДЕР-->
+      <div class="content-wrapper">                                                                     <!-- ХЕДЕР-->
         <header class="main-header clearfix">
             <div class="logo-index">
               <a href="#"><img src="img/logo.svg" width="161" height="70" alt="Глейси"></a>
             </div>
             <nav class="main-navigation">
-
               <ul class="main-menu">
                 <li>
-                  <a class="navigator" href="#"><span class="nav-list-link">Каталог</span></a>
-  <!-- ПОДМЕНЮ -->
-                      <ul class="sub-menu">
-                        <li><a class="sub-menu-title" href="#">Новинки</a></li>
-                        <li><a href="#">Сливочное</a></li>
-                        <li><a href="#">Щербеты</a></li>
-                        <li><a href="#">Фруктовый лед</a></li>
-                        <li><a href="#">Мелорин</a></li>
-                      </ul>
+                  <a class="main-menu-link" href="#"><span class="nav-list-link">Каталог</span></a>        <!-- ПОДМЕНЮ -->
+                  <div class="modal-content-wrapper">
+                    <ul class="sub-menu">
+                      <li><a class="sub-menu-link" href="#"><b>Новинки</b></a></li>
+                      <li><a class="sub-menu-link" href="#">Сливочное</a></li>
+                      <li><a class="sub-menu-link" href="#">Щербеты</a></li>
+                      <li><a class="sub-menu-link" href="#">Фруктовый лед</a></li>
+                      <li><a class="sub-menu-link" href="#">Мелорин</a></li>
+                    </ul>
+                  </div>
+
                 </li>
-                <li><a class="navigator" href="#"><span class="nav-list-link">Доставка и оплата</span></a></li>
-                <li><a class="navigator" href="#"><span class="nav-list-link">О Компании</span></a></li>
+                <li><a class="main-menu-link" href="#"><span class="nav-list-link">Доставка и оплата</span></a></li>
+                <li><a class="main-menu-link" href="#"><span class="nav-list-link">О Компании</span></a></li>
               </ul>
             </nav>
 <!-- ПОИСК -->
@@ -71,18 +71,53 @@
 <!-- КОРЗИНА -->
 
 
-              <div class="user-block-item">
-                <div class="cart">
-                  <a class="user-block-link cart-link" href="#">пусто</a>
+<div class="user-block-item">
+  <div class="cart">
+    <a class="user-block-link cart-link" href="#">пусто</a>
+    <div class="modal-content-wrapper">
+      <div class="cart-input clearfix">
+        <div class="cart-content-wrapper">
+          <div class="item">
+            <div class="cart-item">
+              <a class="cart-delete-item-btn" href="#"></a>
+              <img src="img/miniatur_for_cart1.png" alt="миниатюра мороженого" />
+            </div>
+              <div class="cart-input-title">
+                <span>Пломбир с апельсиновым джемом</span>
+              </div>
+              <div class="cart-description">
+                <span class="cart-weight">1,5кг</span><span class="simbol">x</span></span><span class="cart-price">200 руб.</span>
+                <div class="cart-total">
+                  <span class="cart-weight">300 руб.</span>
                 </div>
               </div>
+          </div>
+          <div class="item">
+            <div class="cart-item">
+              <a class="cart-delete-item-btn" href="#"></a>
+              <img src="img/miniatur_for_cart2.png" alt="миниатюра мороженого" />
             </div>
-
-<!-- КОНТАКТНАЯ ИНФОРМАЦИЯ -->
-              <div class="contact-info">
-                <p class="work-time">с 10 до 20, ежедневно</p>
-                <a class="phone" href="#">8 812 450-25-25</a>
+              <div class="cart-input-title">
+                <span>Клубничный пломбир с присыпкой  из белого шоколада</span>
               </div>
+              <div class="cart-description">
+                <span class="cart-weight">1,5кг</span><span class="simbol">x</span></span><span class="cart-price">300 руб.</span>
+                <div class="cart-total">
+                  <span class="cart-weight">450 руб.</span>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="cart-total-footer">
+          <p class="cart-submit-total">Итого: 750 руб.</p>
+          <a class="cart-submit-btn btn" href="#">Оформить заказ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
             </header>
 
 
@@ -145,6 +180,11 @@
                   <div class="item-description">
                     <a class="item-description-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                   </div>
+                  <div class="underlayer">
+                    <div class="icecream-underlayer">
+                      <a class="btn btn-icecream" href="#">Быстрый просмотр</a>
+                    </div>
+                  </div>
                 </div>
               </li>
 
@@ -164,6 +204,11 @@
                   <div class="item-description">
                     <a class="item-description-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
                   </div>
+                  <div class="underlayer">
+                    <div class="icecream-underlayer">
+                      <a class="btn btn-icecream" href="#">Быстрый просмотр</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li>
@@ -180,6 +225,11 @@
                   <div class="item-description">
                   <a class="item-description-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                   </div>
+                  <div class="underlayer">
+                    <div class="icecream-underlayer">
+                      <a class="btn btn-icecream" href="#">Быстрый просмотр</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li>
@@ -195,6 +245,11 @@
                 </div>
                   <div class="item-description">
                     <a class="item-description-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+                  </div>
+                  <div class="underlayer">
+                    <div class="icecream-underlayer">
+                      <a class="btn btn-icecream" href="#">Быстрый просмотр</a>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -292,7 +347,7 @@
             </div>
           <div class="footer-copyright">
             <a class="copyright" href="#"><img src="img/logo-ico.png" alt="" /></a>
-            <p>Сделано в <a class="copyright-title" href="#">HTML Academy</a>© 2016</p>
+            <p>Сделано в <a class="copyright-title" href="#">HTML Academy</a> &copy; 2016</p>
           </div>
         </div>
     </footer>
