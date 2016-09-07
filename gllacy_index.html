@@ -303,7 +303,7 @@
                 <form class="submit-form clearfix" action="index.html" method="post">
 
                   <input class="submit" type="text" name="email" id="submit">
-                  <span class="placeholder-submit">Электронная почта</span>
+                  <label for="submin" class="placeholder-submit">Электронная почта</label>
                   <input class="btn btn-submit" type="submit" value="Отправить">
                 </form>
                 </div>
@@ -360,16 +360,16 @@
           <a class="close-btn" href="#"></a>
           <h3>Мы обязательно вам ответим!</h3>
           <div class="login-input">
-                <input class="feedback-input" type="text" name="email" required="Заполните пожалуйста поле">
-              <span class="feedback-span login-span">Ваша почта для ответа?</span>
+              <label class="feedback-span login-span">Ваша почта для ответа?</label>
+                <input class="feedback-input" type="text" name="email" >
 
           </div>
           <div class="email-input">
-
-              <input class="feedback-input" type="email" name="email" required="Заполните пожалуйста поле">
               <span class="feedback-span email-span">Ваша почта для ответа?</span>
+              <input class="feedback-input" type="email" name="email">
+
           </div>
-          <textarea class="textarea" name="comment" cols="40" rows="3">Напишите что-нибудь...</textarea>
+          <textarea class="textarea" name="comment" cols="40" rows="3" placeholder="Напишите что-нибудь..."></textarea>
           <button class="feedback-btn btn" type="button" name="button">Отправить</button>
         </form>
       </div>

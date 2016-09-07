@@ -216,7 +216,6 @@ h3 {
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 0;
       margin: auto;
       top: 300px;
       width: 480px;
@@ -1136,8 +1135,7 @@ outline: none;
 
 }
 .submit:hover {
-  border: 2px solid #d3d3d2;
-  box-sizing: border-box;
+  box-shadow: 0 0 0 2px #c7c6c5 inset;
 }
 .submit[placeholder] {
   font-size: 16px;
@@ -1155,12 +1153,10 @@ outline: none;
 .placeholder-submit {
   position: absolute;
     bottom: 13px;
+    left: 20px;
     font-size: 16px;
     line-height: 24px;
-    padding-left: 15px;
-    padding-bottom: 5px;
     font-weight: normal;
-    display: block;
     color: #999999;
 }
  .submit:focus + .placeholder-submit {
