@@ -177,9 +177,10 @@ h3 {
   vertical-align: top;
 }
 .feedback-span {
+  display: none;
   position: absolute;
   top: 16px;
-  font-size: 16px;
+  font-size: 0;
   line-height: 24px;
   padding-left: 15px;
   padding-bottom: 5px;
@@ -187,7 +188,7 @@ h3 {
   display: block;
   color: #999999;
 }
-.feedback-form input[type="text"]:focus + .feedback-span {
+.feedback .feedback-input:focus + .feedback-span {
   position: absolute;
     top: -14px;
     font-size: 11px;
@@ -793,10 +794,10 @@ outline: none;
   border-radius: 50%;
   cursor: pointer;
 }
-..slider-controls label:hover {
-  background-color: #ffffff;
-
+.slider-controls label:hover {
+  background-color: rgba(255,255,255,.2)
 }
+
 
 #btn-1:checked ~ .site-wrapper #slide1,
 #btn-2:checked ~ .site-wrapper #slide2,
@@ -1135,7 +1136,8 @@ outline: none;
 
 }
 .submit:hover {
-  border: 2px solid #d3d3d2
+  border: 2px solid #d3d3d2;
+  box-sizing: border-box;
 }
 .submit[placeholder] {
   font-size: 16px;
@@ -1152,7 +1154,7 @@ outline: none;
 
 .placeholder-submit {
   position: absolute;
-    bottom: 9px;
+    bottom: 13px;
     font-size: 16px;
     line-height: 24px;
     padding-left: 15px;
@@ -1161,7 +1163,7 @@ outline: none;
     display: block;
     color: #999999;
 }
- .feedback-input:focus + .placeholder-submit {
+ .submit:focus + .placeholder-submit {
     position: absolute;
     top: -21px;
     font-size: 11px;
@@ -1173,19 +1175,6 @@ outline: none;
     color: #3998c0;
 
   }
-  .submit:active + .placeholder-submit {
-    position: absolute;
-    top: -21px;
-    font-size: 11px;
-    line-height: 13px;
-    padding-left: 15px;
-    padding-bottom: 5px;
-    font-weight: normal;
-    display: block;
-    color: #999999;
-  }
-
-
 
 
 .news a {
@@ -1506,6 +1495,56 @@ border-bottom: 2px solid rgba(249, 172, 159, 0.3);
   color: #ffffff;
 }
 
+.filter-sort {
+    width: 192px;
+}
+.filters-item {
+    border: none;
+    margin: 0 15px 12px 0;
+    padding: 0;
+}
+
+.filters-title {
+    font-size: 14px;
+    margin: 10px 15px 7px;
+}
+
+.filter-sort-field {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 36px;
+    font-weight: 500;
+    background-color: rgba(255,255,255,.2);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all .2s ease-out;
+}
+
+.filter-sort-field .select {
+    width: 100%;
+    height: 36px;
+    margin: 0;
+    padding: 0 25px 0 10px;
+    background-color: transparent;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: 0;
+
+
+}
+.filter-sort-field .select-icon:after {
+  content: "";
+      position: absolute;
+      top: 50%;
+      right: 7%;
+      width: 0;
+      height: 0;
+      margin-top: -.15rem;
+      pointer-events: none;
+}
+
 .filter-item {
   display: inline-block;
   vertical-align: top;
@@ -1613,8 +1652,9 @@ input[type="checkbox"] {
 }
 input[type="checkbox"] + label {
   display: inline-block;
-  margin: 0 10px;
-  padding-left: 45px;
+  margin-top: 0;
+  margin-left: 10px;
+  padding-left: 25px;
   position: relative;
   cursor: pointer;
 }
@@ -1659,7 +1699,7 @@ input[type="checkbox"]:hover label {
   width: 415px;
 }
 .ingridients {
-  width: 703px;
+  width: 750px;
 }
 .submit-button {
   width: 150px;

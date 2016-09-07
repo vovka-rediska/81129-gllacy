@@ -12,7 +12,7 @@
           <div class="content-wrapper">
             <header class="main-header clearfix">
                 <div class="logo-index">
-                  <a href="#"><img src="img/logo.svg" width="161" height="70" alt="Глейси"></a>
+                  <a href="gllacy_index.html"><img src="img/logo.svg" width="161" height="70" alt="Глейси"></a>
                 </div>
                 <nav class="main-navigation">
                   <ul class="main-menu">
@@ -126,16 +126,18 @@
     <h1 class="main-title">Сливочное мороженое</h1>
 
     <form class="filter clearfix" action="index.html" method="post">
-        <div class="filer-sort filter-item">
-          <p class="filter-name">Сортировка</p>
-          <select class="filter-list" name="sorting">
-            <option value="популярные">По популярности</option>
-            <option value="популярные">Сначала дорогие</option>
-            <option value="популярные">Сначала не дорогие</option>
-            <option value="популярные">По жирности</option>
-
-          </select>
-        </div>
+      <fieldset class="filters-item filter-sort">
+             <legend class="filters-title">Сортировка</legend>
+             <div class="filter-sort-field">
+               <select class="select" name="sort" id="sort">
+                 <option value="top">по популярности</option>
+                 <option value="low-price">сначала недорогие</option>
+                 <option value="high-price">сначала дорогие</option>
+                 <option value="fat">по жирности</option>
+               </select>
+               <i class="select-icon"></i>
+             </div>
+           </fieldset>     
 
 
         <div class="range-filter">
