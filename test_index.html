@@ -301,8 +301,9 @@
                   и не слать всякой не нужной ерунды. Честно =))
                 </p>
                 <form class="submit-form clearfix" action="index.html" method="post">
+
+                  <input class="submit" type="text" name="email" id="submit">
                   <span class="placeholder-submit">Электронная почта</span>
-                  <input class="submit" type="text" name="email" id="submit" value="" placeholder="Электронная почта">
                   <input class="btn btn-submit" type="submit" value="Отправить">
                 </form>
                 </div>
@@ -358,8 +359,15 @@
         <form class="feedback-form clearfix" action="index.html" method="post">
           <a class="close-btn" href="#"></a>
           <h3>Мы обязательно вам ответим!</h3>
-          <input type="text" name="yourname" placeholder="Как вас зовут?" required="Заполните пожалуйста поле">
-          <input type="email" name="email" placeholder="Ваша почта для ответа?" required="Заполните пожалуйста поле">
+          <div class="login-input">
+              <span class="feedback-span login-span">Как вас зовут</span>
+              <input  class="feedback-input" type="text" name="yourname" required="Заполните пожалуйста поле">
+          </div>
+          <div class="email-input">
+
+              <input class="feedback-input" type="email" name="email" required="Заполните пожалуйста поле">
+              <span class="feedback-span email-span">Ваша почта для ответа?</span>
+          </div>
           <textarea class="textarea" name="comment" cols="40" rows="3">Напишите что-нибудь...</textarea>
           <button class="feedback-btn btn" type="button" name="button">Отправить</button>
         </form>

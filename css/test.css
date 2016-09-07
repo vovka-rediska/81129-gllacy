@@ -165,7 +165,39 @@ h3 {
 
 /*ПОЛЕ ОБРАТНОЙ СВЯЗИ*/
 
+.login-input {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
 
+}
+.email-input {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+.feedback-span {
+  position: absolute;
+  top: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  font-weight: normal;
+  display: block;
+  color: #999999;
+}
+.feedback-form input[type="text"]:focus + .feedback-span {
+  position: absolute;
+    top: -14px;
+    font-size: 11px;
+    line-height: 13px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    font-weight: normal;
+    display: block;
+    color: #71adef;
+}
 
 .feedback {
   z-index: 9999;
@@ -192,6 +224,7 @@ h3 {
       border-radius: 15px;
       padding: 20px 25px 25px 25px;
 }
+
 .feedback-show {
   display: block;
    animation: bounce 0.6s;
@@ -212,7 +245,7 @@ h3 {
   line-height: 24px;
   color: #999999;
   border: 1px solid #d3d3d2;
-  outline: none;
+
 }
 .textarea {
   font-family: 'Roboto', sans-serif;
@@ -1091,11 +1124,14 @@ outline: none;
   outline: none;
 }
 .submit {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
   box-sizing: border-box;
-    padding: 15px;
-    width: 365px;
-    border-radius: 5px;
-    border: 1px solid #d3d3d2;
+  padding: 15px;
+  width: 365px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d2;
 
 }
 .submit:hover {
@@ -1116,18 +1152,42 @@ outline: none;
 
 .placeholder-submit {
   position: absolute;
-  top: -15px;
-  font-size: 11px;
-  line-height: 13px;
-  padding-left: 15px;
-  padding-bottom: 5px;
-  font-weight: normal;
-  display: none;;
-  color: #5b9ddf;
+    bottom: 9px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    font-weight: normal;
+    display: block;
+    color: #999999;
 }
-.submit-form input:focus .placeholder-submit {
-  display: block;
-}
+ .feedback-input:focus + .placeholder-submit {
+    position: absolute;
+    top: -21px;
+    font-size: 11px;
+    line-height: 13px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    font-weight: normal;
+    display: block;
+    color: #3998c0;
+
+  }
+  .submit:active + .placeholder-submit {
+    position: absolute;
+    top: -21px;
+    font-size: 11px;
+    line-height: 13px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    font-weight: normal;
+    display: block;
+    color: #999999;
+  }
+
+
+
+
 .news a {
     color: #000000;
 }
@@ -1140,7 +1200,7 @@ outline: none;
 
 
 .btn-submit {
-  margin-top: 5px;
+  margin-top: 0px;
   border: none;
 
 }
@@ -1467,6 +1527,12 @@ border-bottom: 2px solid rgba(249, 172, 159, 0.3);
     background-color: rgba(255, 255, 255, 0.3);
     margin-bottom: 15px;
 }
+.range-controls .bar {
+  width: 70%;
+  height: 4px;
+  background: #ffffff;
+
+}
 
 .range-controls .scale {
   height: 4px;
@@ -1541,9 +1607,54 @@ color: white;
 .filer-sort {
   width: 195px;
 }
-.filer-price {
-  width: 220px;
+                                                                                  /*ЖИРНОСТЬ*/
+input[type="checkbox"] {
+  display: none;
 }
+input[type="checkbox"] + label {
+  display: inline-block;
+  margin: 0 10px;
+  padding-left: 45px;
+  position: relative;
+  cursor: pointer;
+}
+input[type="checkbox"] + label::before {
+  content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+input[type="checkbox"]:checked + label::after{
+  content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url("../img/checkbox.png") no-repeat -1px -1px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+input[type="checkbox"]:hover label {
+  content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+
+
+
+
 .fat-content {
   width: 415px;
 }
